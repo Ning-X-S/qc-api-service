@@ -1,0 +1,45 @@
+{
+  "name": "qc-api-service",
+  "version": "0.1.0",
+  "description": "系统的api服务",
+  "main": "server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./server.js",
+    "prod": "NODE_ENV=prodution node ./server.js",
+    "lint": "./node_modules/eslint/bin/eslint.js ./app",
+    "doc": "./node_modules/apidoc/bin/apidoc  -i app/ -o apidoc/"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "qiuwenju",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "fast-xml-parser": "^3.12.20",
+    "follow-redirects": "^1.7.0",
+    "ioredis": "^4.6.2",
+    "json-bigint": "^0.3.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "raven": "^2.6.4",
+    "sequelize": "^5.8.5",
+    "ws": "^6.2.0"
+  },
+  "devDependencies": {
+    "acorn": "^6.1.1",
+    "apidoc": "^0.17.7",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "install": "^0.12.2",
+    "nodemon": "^1.18.10"
+  }
+}
